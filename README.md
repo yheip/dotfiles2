@@ -2,18 +2,14 @@
 
 ## Setup
 ```sh
-# Install stow
-# MacOS
-brew install stow
-# Ubuntu
-sudo apt install stow
-
-git clone https://github.com/yheip/dotfiles ~/dotfiles
-cd ~/dotfiles
-
-# Symlink config file
-stow emacs
-
-# Unlink config file 
-stow -D emacs
+git clone --separate-git-dir=~/.dotfiles git@github.com:yheip/dotfiles2.git ~
 ```
+
+### Ubuntu
+```sh
+systemctl --user enable emacs.service
+systemctl --user start emacs.service
+```
+
+### MacOS
+
