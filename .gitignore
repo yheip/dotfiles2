@@ -1,2 +1,2 @@
-.tmux/**
-!.tmux/tpm
+.tmux/plugins/**
+!.tmux/plugins/tpm
