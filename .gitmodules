@@ -1,3 +1,18 @@
 [submodule "/home/noname/.tmux/plugins/tpm"]
 	path = /home/noname/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/hlissner/doom-emacs
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule ".oh-my-zsh.d/themes/spaceship-prompt"]
+	path = .oh-my-zsh.d/themes/spaceship-prompt
+	url = https://github.com/denysdovhan/spaceship-prompt.git
+[submodule ".config/base16-shell"]
+	path = .config/base16-shell
+	url = https://github.com/chriskempson/base16-shell.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
