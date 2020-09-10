@@ -45,6 +45,7 @@ export LANG=en_US.UTF-8
 alias k="kubectl"
 alias vim="nvim"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias ec="emacsclient -c"
 
 export PATH=$HOME/go/bin:$HOME/.emacs.d/bin:$HOME/.cargo/bin:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
 export KUBE_EDITOR=/usr/local/bin/nvim

@@ -16,10 +16,14 @@ fi
 
 echo "Installing homebrew packages ..."
 
+# Emacs Emacs dep
 brew tap d12frosted/emacs-plus
+brew install emacs-plus --without-cocoa \
+	fd \
+	rg \
+	coreutils
 
 brew install \
-    ripgrep \
     tree \
     wget \
     git \
@@ -32,8 +36,7 @@ brew install \
     pipenv \
     thefuck \
     nodenv \
-    tldr \
-    emacs-plus --without-cocoa
+    tldr
 
 # Font
 brew tap homebrew/cask-fonts
