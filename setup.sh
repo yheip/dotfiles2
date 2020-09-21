@@ -34,6 +34,7 @@ brew install \
     fzf \
     rbenv \
     pipenv \
+    pyenv \
     thefuck \
     nodenv \
     tldr
