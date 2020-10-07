@@ -38,6 +38,7 @@ _evalcache pipenv --completion
 _evalcache thefuck --alias
 _evalcache stern --completion=zsh
 _evalcache pyenv init -
+_evalcache pyenv virtualenv-init -
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
