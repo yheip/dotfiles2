@@ -27,6 +27,7 @@ brew install \
     tree \
     wget \
     git \
+    go \
     reattach-to-user-namespace \
     tmux \
     zsh \
@@ -37,8 +38,25 @@ brew install \
     pyenv \
     thefuck \
     nodenv \
-    tldr
+    tldr \
+    stern \
+    postgres
 
 # Font
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
+
+# Keyboard preference
+defaults write -g ApplePressAndHoldEnabled -bool true
+
+# Install tools
+export GO111MODULE=on
+go get golang.org/x/tools/gopls@latest
+go get golang.org/x/tools/cmd/guru@latest
+
+
+# Postgres
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+
+# Useful apps
+brew cask install rectangle

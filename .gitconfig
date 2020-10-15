@@ -1,6 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-    name = Zack
+	name = Zack Pang
+	email = zyhpang@gmail.com
 [alias]
     # list all aliases
     la = "!git config -l | grep alias | cut -c 7-"
@@ -127,3 +128,5 @@
     lineNumber = true
 [credential]
 	helper = osxkeychain
+[url "git@github.com:"]
+	insteadOf = https://github.com/

@@ -29,7 +29,7 @@ export SPACESHIP_KUBECONTEXT_SHOW=false
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        _evalcache $BASE16_SHELL/profile_helper.sh
+	eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 ## ENV setup
 _evalcache rbenv init -
@@ -44,10 +44,12 @@ _evalcache pyenv virtualenv-init -
 export LANG=en_US.UTF-8
 
 alias k="kubectl"
-alias vim="nvim"
+# alias vim="nvim"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias ec="emacsclient -c"
+alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"	
 
 export PATH=$HOME/go/bin:$HOME/.emacs.d/bin:$HOME/.cargo/bin:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
-export KUBE_EDITOR=/usr/local/bin/nvim
+export KUBE_EDITOR=/usr/bin/vim
 

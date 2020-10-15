@@ -13,4 +13,6 @@ sh setup.sh
 
 # Setup doom emacs
 ~/.emacs.d/bin/doom install
+# enable emacs daemon
+launchctl load -w ~/Library/LaunchAgents/org.gnu.emacs.daemon.plist
 ```
