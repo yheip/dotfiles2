@@ -40,7 +40,12 @@ brew install \
     nodenv \
     tldr \
     stern \
-    postgres
+    postgres \
+    pgcli \
+    helm \
+    watch \
+    jq \
+    yq
 
 # Font
 brew tap homebrew/cask-fonts
@@ -54,9 +59,6 @@ export GO111MODULE=on
 go get golang.org/x/tools/gopls@latest
 go get golang.org/x/tools/cmd/guru@latest
 
-
-# Postgres
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-
 # Useful apps
 brew cask install rectangle
+brew cask install google-cloud-sdk

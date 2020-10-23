@@ -46,10 +46,14 @@ export LANG=en_US.UTF-8
 alias k="kubectl"
 # alias vim="nvim"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-alias ec="emacsclient -c"
-alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"	
+alias ec="emacsclient -nw"
+alias pg_start="docker run -dit --rm --name postgres \
+	-e POSTGRES_PASSWORD=postgres \
+	-v $HOME/.pg_data:/var/lib/postgresql/data \
+	-p 5432:5432 \
+	postgres"
+alias pg_stop="docker stop `docker ps -f name=postgres --format "{{.ID}}"`"
 
-export PATH=$HOME/go/bin:$HOME/.emacs.d/bin:$HOME/.cargo/bin:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
+export PATH=$HOME/bin:$HOME/go/bin:$HOME/.emacs.d/bin:$HOME/.cargo/bin:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
 export KUBE_EDITOR=/usr/bin/vim
 
