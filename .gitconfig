@@ -2,6 +2,7 @@
 [user]
 	name = Zack Pang
 	email = zyhpang@gmail.com
+	signingkey = 5B9B2BB5
 [alias]
     # list all aliases
     la = "!git config -l | grep alias | cut -c 7-"
@@ -132,3 +133,7 @@
 	insteadOf = https://github.com/
 [github]
 	user = yheip
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true
