@@ -10,11 +10,13 @@
     <string>/usr/local/bin/emacs</string>
     <string>--daemon</string>
   </array>
-  <key>KeepAlive</key>
+  <key>RunAtLoad</key>
   <true/>
-  <key>ServiceDescription</key>
-  <string>Gnu Emacs Daemon</string>
-  <key>UserName</key>
-  <string>zack.pang</string>
+  <key>StandardInPath</key>
+  <string>/tmp/emacs.stdin</string>
+  <key>StandardOutPath</key>
+  <string>/tmp/emacs.stdout</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/emacs.stderr</string>
 </dict>
 </plist>
