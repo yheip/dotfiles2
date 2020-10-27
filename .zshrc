@@ -44,7 +44,6 @@ _evalcache pyenv virtualenv-init -
 export LANG=en_US.UTF-8
 
 alias k="kubectl"
-# alias vim="nvim"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias ec="emacsclient -nw"
 alias pg_start="docker run -dit --rm --name postgres \

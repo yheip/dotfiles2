@@ -115,6 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export PATH="$HOME/go/bin:$HOME/.emacs.d/bin:$HOME/.nodenv/bin:/usr/local/kubebuilder/bin:$PATH"
-eval "$(nodenv init -)"
