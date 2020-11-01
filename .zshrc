@@ -51,7 +51,7 @@ alias pg_start="docker run -dit --rm --name postgres \
 	-v $HOME/.pg_data:/var/lib/postgresql/data \
 	-p 5432:5432 \
 	postgres"
-alias pg_stop="docker stop `docker ps -f name=postgres --format "{{.ID}}"`"
+alias pg_stop='docker stop `docker ps -f name=postgres --format "{{.ID}}"`'
 
 export PATH=$HOME/bin:$HOME/go/bin:$HOME/.emacs.d/bin:$HOME/.cargo/bin:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
 export KUBE_EDITOR=/usr/bin/vim
