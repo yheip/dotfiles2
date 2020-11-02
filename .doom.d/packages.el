@@ -51,3 +51,4 @@
 (package! clipetty)
 (package! dockerfile-mode)
 (package! mermaid-mode)
+(package! keychain-environment)

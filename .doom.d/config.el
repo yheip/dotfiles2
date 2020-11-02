@@ -87,6 +87,10 @@
 (after! persp-mode
   (setq persp-emacsclient-init-frame-behaviour-override "main"))
 
+(use-package! keychain-environment
+  :init
+  (keychain-refresh-environment))
+
 ;; ==================================================================
 ;; (use-package! lsp-mode
 ;;   :ensure t
