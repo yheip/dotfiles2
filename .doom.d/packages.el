@@ -52,3 +52,5 @@
 (package! dockerfile-mode)
 (package! mermaid-mode)
 (package! keychain-environment)
+(package! uuidgen)
+(package! graphql-mode)

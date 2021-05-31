@@ -18,7 +18,7 @@ echo "Installing homebrew packages ..."
 
 # Emacs Emacs dep
 brew tap d12frosted/emacs-plus
-brew install emacs-plus --without-cocoa \
+brew install emacs-plus --with-modern-black-dragon-icon \
 	fd \
 	rg \
 	coreutils
@@ -62,3 +62,7 @@ go get golang.org/x/tools/cmd/guru@latest
 # Useful apps
 brew cask install rectangle
 brew cask install google-cloud-sdk
+
+# After install
+ln -s /usr/local/opt/emacs-plus@27/Emacs.app /Applications
+

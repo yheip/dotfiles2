@@ -1,13 +1,25 @@
+#+TITLE: Doom emacs config
+* Doom theme
+#+BEGIN_SRC emacs-lisp
 (setq doom-theme 'doom-material)
+#+END_SRC
 
+* Personal
+#+BEGIN_SRC emacs-lisp
 (setq user-full-name "yheip"
       user-mail-address "zyhpang@gmail.com")
+#+END_SRC
 
+* ORG MODE
+#+BEGIN_SRC emacs-lisp
 (after! org
   (setq org-directory "~/Dropbox/org/"
         org-superstar-headline-bullets-list '("⁖" "◉" "○" "✸" "✿"))
   )
+#+END_SRC
 
+* OTHER SHIT
+#+BEGIN_SRC emacs-lisp
 (setq display-line-numbers-type 't)
 (defun setup-tide-mode ()
   (interactive)
@@ -48,3 +60,4 @@
 (use-package! keychain-environment
   :init
   (keychain-refresh-environment))
+#+END_SRC
